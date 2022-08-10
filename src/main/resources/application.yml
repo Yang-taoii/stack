@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: guest
+    password: guest
+    connection-timeout: 60s
+    virtual-host=: "/"
+    listener:
+      direct:
+        acknowledge-mode: none
