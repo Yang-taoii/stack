@@ -9,3 +9,12 @@ spring:
     listener:
       direct:
         acknowledge-mode: none
+
+  # Mqtt配置
+  mqtt:
+    serverURIs: tcp://47.97.114.254:18083
+    username: admin
+    password: password
+    client:
+      id: ${random.value}
+    topic: topic_default
